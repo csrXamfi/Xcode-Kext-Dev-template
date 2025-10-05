@@ -6,8 +6,6 @@ Big thanks to the projects and people that made this possible:
 - Xcode-IOKit-Driver-Template — https://github.com/startpenghubingzhou/Xcode-IOKit-Driver-Template — (thanks: template ideas).  
 - KextRW — https://github.com/alfiecg24/KextRW — (thanks: Makefile / build tricks).
 
-> Replace the links above with real URLs.
-
 ---
 
 ## Summary
@@ -28,16 +26,16 @@ This repository contains:
    - Confirm the project builds successfully in Xcode.
 
 2. Create the example project (`kext-dev`)  
-   - Copy the template layout and create kext-dev/ with the same bundle structure (`Final.kext/Contents/...`).  
+   - Create the project and create dirs: misc/Info.plist and src/*.cpp and .h files.  
    - Add src/ and put your driver sources there (`YourKext.cpp`, YourUserClient.cpp, `kmod.cpp`).
 
 3. Add a Makefile  
-   - The Makefile should build the Mach-O binary and place it in Final.kext/Contents/MacOS/Final.  
-   - Provide targets: build, install, clean, test.
+   - The Makefile should build the YourKext.kext.  
+   - Provide targets: build, install, clean.
 
 4. (Optional) kmod.cpp  
-   - If you use the IOService lifecycle, kmod.cpp is not required.  
-   - If you need a manual entry point or helper functions, put them in src/kmod.cpp, but do not duplicate _kmod_info (avoid duplicate symbol errors).
+   - If you use the IOService lifecycle, kmod.cpp is not required (Xcode project).  
+   - If you need a manual entry point or helper functions, put them in src/kmod.cpp (not Xcode project).
 
 5. Write the userspace client  
    - The client should open the service (`IOServiceGetMatchingService`), call IOServiceOpen, then call selectors via IOConnectCallMethod or IOConnectCallStructMethod.  
