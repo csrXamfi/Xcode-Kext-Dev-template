@@ -3,8 +3,8 @@
 
 Big thanks to the projects and people that made this possible:
 
-- Xcode-IOKit-Driver-Template — [https://github.com/startpenghubingzhou/Xcode-IOKit-Driver-Template] — (thanks: template ideas).  
-- KextRW — [https://github.com/alfiecg24/KextRW] — (thanks: Makefile / build tricks).
+- Xcode-IOKit-Driver-Template — https://github.com/startpenghubingzhou/Xcode-IOKit-Driver-Template — (thanks: template ideas).  
+- KextRW — https://github.com/alfiecg24/KextRW — (thanks: Makefile / build tricks).
 
 > Replace the links above with real URLs.
 
