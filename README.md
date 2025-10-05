@@ -64,7 +64,3 @@ make install
 
 ## Load xctemplate
 Just download and drag it into /Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/Project Templates/Mac/Other/ to replace IOKit Driver.xctemplate, then restart your Xcode app and enjoy it!
-
-
-
-## Example kext-dev project structure
