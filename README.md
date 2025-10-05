@@ -61,6 +61,12 @@ cd kext_dev
 make
 make install
 ```
+3. Plist link with simpleClient
+```shell
+brew install ldid
+ldid -Sent.plist <path to binary>
+./<path to binary>
+```
 
 ## Load xctemplate
 Just download and drag it into /Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/Project Templates/Mac/Other/ to replace IOKit Driver.xctemplate, then restart your Xcode app and enjoy it!
