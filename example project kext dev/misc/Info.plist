@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>Final</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.lozhnikov.Final</string>
+	<key>CFBundleName</key>
+	<string>Final</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>Final</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.lozhnikov.Final</string>
+			<key>IOClass</key>
+			<string>Final</string>
+			<key>IOMatchCategory</key>
+			<string>Final</string>
+			<key>IOProviderClass</key>
+			<string>IOResources</string>
+			<key>IOResourceMatch</key>
+			<string>IOBSD</string>
+			<key>IOUserClientClass</key>
+			<string>FinalUserClient</string>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.kpi.bsd</key>
+		<string>25.0.0</string>
+		<key>com.apple.kpi.dsep</key>
+		<string>25.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>25.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>25.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>25.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>25.0.0</string>
+	</dict>
+</dict>
+</plist>
